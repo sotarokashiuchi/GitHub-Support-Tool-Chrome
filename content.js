@@ -1,6 +1,10 @@
+const nameList = [
+    ["KashiuchiSotaroSub", "樫内サブ"], 
+];
+
 // テキストを置換する関数
 function replaceText() {
-    var elements = document.getElementsByTagName('*');
+    var elements = document.getElementsByTagName('a');
 
     for (var i = 0; i < elements.length; i++) {
         var element = elements[i];
@@ -10,7 +14,10 @@ function replaceText() {
 
             if (node.nodeType === 3) {
                 var text = node.nodeValue;
-                var replacedText = text.replace("KashiuchiSotaroSub", "樫内"); // 置換する文字列を指定
+                var replacedText = text;
+                for(var k = 0; k < nameList.length; k++){
+                    replacedText = replacedText.replace(nameList[k][0], nameList[k][1]); // 置換する文字列を指定
+                }
                 
                 if (replacedText !== text) {
                     element.replaceChild(document.createTextNode(replacedText), node);
