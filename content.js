@@ -1,5 +1,4 @@
 const nameList = [
-    ["KashiuchiSotaroSub", "樫内サブ"], 
 ];
 
 // テキストを置換する関数
