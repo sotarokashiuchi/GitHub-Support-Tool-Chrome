@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Text Replacement",
+    "version": "1.0",
+    "description": "Replace specific text on a specific website.",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://example.com/*"], 
+        "js": ["content.js"] 
+      }
+    ]
+  }
+  
