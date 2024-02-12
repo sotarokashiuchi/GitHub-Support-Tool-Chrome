@@ -1,17 +1,15 @@
 {
-    "manifest_version": 3,
-    "name": "Text Replacement",
-    "version": "1.0",
-    "description": "Replace specific text on a specific website.",
-    "permissions": [
-      "activeTab",
-      "storage"
-    ],
-    "content_scripts": [
-      {
-        "matches": ["https://github.com/*"], 
-        "js": ["content.js"] 
-      }
-    ]
-  }
-  
+  "manifest_version": 3,
+  "name": "GitHub Support Tools",
+  "version": "1.1",
+  "description": "Transfer GitHub Account Name to Full Name.",
+  "action": {
+      "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"], 
+      "js": ["content.js"]
+    }
+  ]
+}

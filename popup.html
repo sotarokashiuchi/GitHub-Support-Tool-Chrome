@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Extension</title>
+  <style>
+
+    html{
+        height: 200px;
+    }
+    .search {
+      width: 200px;
+      padding: 5px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <input type="text" autocomplete="on" list="name-list" id="search-box" class="search" placeholder="Enter search term...">
+    <datalist id="name-list">
+    </datalist>
+    <button id="search-button" class="search">Change</button>
+    <input type="text" id="resolt-box" class="search" placeholder="">
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
