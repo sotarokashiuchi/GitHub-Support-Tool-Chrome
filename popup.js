@@ -1,6 +1,6 @@
 const nameList = [
+  ["NickName", "FluuName"], 
   ["KashiuchiSotaroSub", "樫内サブ"], 
-  ["TEST", "test"], 
 ];
 
 // テキストを置換する関数
