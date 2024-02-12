@@ -9,7 +9,7 @@
     html{
         height: 200px;
     }
-    #search-box {
+    .search {
       width: 200px;
       padding: 5px;
       margin: 10px;
@@ -18,10 +18,11 @@
 </head>
 <body>
   <div>
-    <input type="text" autocomplete="on" list="name-list" id="search-box"  placeholder="Enter search term...">
+    <input type="text" autocomplete="on" list="name-list" id="search-box" class="search" placeholder="Enter search term...">
     <datalist id="name-list">
     </datalist>
-    <button id="search-button">Insert</button>
+    <button id="search-button" class="search">Change</button>
+    <input type="text" id="resolt-box" class="search" placeholder="">
   </div>
   <script src="popup.js"></script>
 </body>
